@@ -1,0 +1,131 @@
+:root {
+    --portfoliocolor1: #70a9de;
+    --portfoliocolor2: white;
+    --portfoliocolor3: black;
+}
+
+.bar {
+    background-color: var(--portfoliocolor1);
+    color: var(--portfoliocolor2);
+    width: 100%;
+    margin-left: 10px;
+    border: 3px solid black;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+/*Header*/
+
+#navbar {
+    background-color: var(--portfoliocolor1);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid black;
+    top: 0;
+    width: 100%;
+}
+
+#name {
+    margin:auto;
+    font-size: 2.5rem; 
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+}
+
+header li {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+#navbar a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: white;
+}
+
+
+/*About Me Section*/
+
+#welcome-section {
+    display: flex;
+}
+
+#about-bar {
+    margin-top: 20px;
+}
+
+#picture {
+    width: 20%;
+    height: 50%;
+    border-color: black;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 120px;
+}
+
+/*Projects Section*/
+
+.project-tile a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    color: blue;
+}
+
+#projects p {
+    margin-left: 10px;
+}
+
+
+/*Skills Section*/
+.skills h2{
+    text-align:center;
+}
+
+.skills ul{
+    text-align:center;
+}
+.skills li{
+    display: inline-block;
+    padding: 10px; 
+    font-weight:bold;
+}
+
+/*Contact Section*/
+.contact {
+  margin: auto;
+  width: 50%;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#contact-bar {
+    margin: auto;
+}
+
+#linkedin-photo, #git-photo {
+    width: 25px;
+    height: 25px;
+}
+
+/*Screen Size Adjustments*/
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: lightblue;
+  }
+  #navbar {
+      text-wrap: wrap;
+  }
+}

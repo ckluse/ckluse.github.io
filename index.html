@@ -1,14 +1,8 @@
-<!--Still to do
-Fill out resume and projects pages
-upload projects to github and link to pages
-add in some javascript functionality
-fix/edit the things I had to change for freecodecamp-->
-
 <!DOCTYPE html>
 <html>
     <head>
         <title> Cassondra Kluse's Portfolio</title>
-        <link href="./homestyles.css" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,40 +10,45 @@ fix/edit the things I had to change for freecodecamp-->
                 <h1 id="name">Cassondra Kluse</h1>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="./resume.html">Resume</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./ResumePage/resume.html">Resume</a></li>
+                    <li><a href="./ProjectsPage/">Projects</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main><div class="bar" id="about-bar"><h2>About Me</h2></div>
             <div id="welcome-section">
-                <img src="./profilepic.jpg" id="picture"/>
-                <div class="bar"><h1>About Me</h1></div>
-                <p>Welcome to my portfolio!</p>
-                <p>Hi, I'm [Your Name], a versatile professional with a passion for writing, technology, and lifelong learning. I hold a Bachelor's degree in Geography from [University Name] and a certificate in Geographic Information Systems (GIS) from [Institution Name]. Currently, I am expanding my skill set by pursuing a certificate in Front End Engineering from [Online Program Name].
-
-                    As a freelance writer, I have crafted compelling content across various topics and formats, from blog posts and articles to business plans and technical documentation. I excel at distilling complex ideas into clear, engaging prose that resonates with target audiences. My clients have included [Client 1], [Client 2], [Company A], and [Company B].
+                <img src="./Images/profilepic.jpg" id="picture"/>
+                <div class="about-text">
+                    <p>Hi, I'm Cassondra Kluse, a versatile professional with a passion for writing, technology, and lifelong learning. I hold a Bachelor's degree in Geography from Valparaiso University and a certificate in Geographic Information Systems (GIS) from Pennsylvania State University. Currently, I am expanding my skill set by pursuing a certificate in Front End Engineering from CodeCademy.</p>
+    
+                    <p>As a freelance writer, I have crafted compelling content across various topics and formats, from blog posts and articles to business plans and technical documentation. I excel at distilling complex ideas into clear, engaging prose that resonates with target audiences. My clients have included Microsoft, BetterHelp, Glassdoor, and Glority.
+                    In my role as an AI trainer, I collaborate with machine learning teams to develop and optimize AI models for various applications. My responsibilities include annotating and labeling data, writing prompts to elicit desired outputs, evaluating model performance, and providing strategic guidance on dataset design. Through this work, I help ensure AI systems are accurate, reliable, and aligned with user needs. Some of my projects have involved training chatbots, refining recommendation engines, and improving natural language processing models.</p>
                     
-                    In my role as an AI trainer, I collaborate with machine learning teams to develop and optimize AI models for various applications. My responsibilities include annotating and labeling data, writing prompts to elicit desired outputs, evaluating model performance, and providing strategic guidance on dataset design. Through this work, I help ensure AI systems are accurate, reliable, and aligned with user needs. Some of my projects have involved training chatbots, refining recommendation engines, and improving natural language processing models.
+                    <p>Looking ahead, my career goal is to transition into the tech industry, where I can leverage my unique blend of skills and experiences. I am excited to explore opportunities as a Technical Writer, Prompt Engineer/AI Trainer, or Software Developer. With my strong communication abilities, technical aptitude, and eagerness to learn, I am confident in my ability to make valuable contributions to innovative projects and teams.</p>
                     
-                    Looking ahead, my career goal is to transition into the tech industry, where I can leverage my unique blend of skills and experiences. I am excited to explore opportunities as a Technical Writer, Prompt Engineer/AI Trainer, or Software Developer. With my strong communication abilities, technical aptitude, and eagerness to learn, I am confident in my ability to make valuable contributions to innovative projects and teams.
-                    
-                    If you are seeking a dedicated and versatile professional to join your organization, I would love to connect and discuss how I can help drive your success. Please feel free to reach out via the contact information provided below.</p>
-                <div id="projects">
+                    <p>If you are seeking a dedicated and versatile professional to join your organization, I would love to connect and discuss how I can help drive your success. Please feel free to reach out via the contact information provided below.</p></div>
+                </div>
+                    <div id="projects">
                 <div class="bar"><h2>Project Highlights</h2></div>
+                <p>Below are some writing projects that I'm proud of: </p>
                 <div class="project-tile">
             <ul>
-                <li><a href="">Project1</a></li>
-                <li><a href="">Project2</a></li>
-                <li><a href="">Project3</a></li>
+                <li><a href="">Chakra Healing with Shadow Work: Self-care To Integrate Your Shadow, Unblock your Chakras, and Become Whole</a></li>
+                <li><a href="">From the Tower to the Sun: A Tarot Journey from Trauma to Transformation</a></li>
+                <li><a href="">Business Plans With Growthink</a></li>
             </ul>
-            </div>
-        </div>
+                <p>Below are some coding projects that I'm proud of: </p>
+                <div class="project-tile">
+            <ul>
+                <li><a href="">Git Technical Documentation</a></li>
+                <li><a href="">Jane Austen Tribute Page</a></li>
+            </ul>
+
+        </div></div></div>
         <div class="skills">
-            <!---either list or row of pictures just like in example portfolio-->
             <div class="bar"><h2>Skills</h2></div>
             <ul>
-                <li>Python</li>
+            <li>Python</li>
             <li>JavaScript</li>
             <li>CSS</li>
             <li>HTML</li>
@@ -57,15 +56,15 @@ fix/edit the things I had to change for freecodecamp-->
             <li>Technical Writing</li>
         </ul>
         </div>
-        <div class="contact">
-            <div class="bar"><h2>Contact Me</h2></div>
-            <p><strong>Email:</strong>gmail.com</p>
-            <!--put linked in profile and github profile here-->
-            <a id="profile-link" target="_blank"><img src="./linkedinlogo.png"></a>
-            <a id="git-link" target="_blank"><img src="./githublogo.png"></a>
-        </div>
+        
         </main>
     </body>
     <footer>
+        <div class="contact">
+            <div class="bar" id="contact-bar"><h2>Contact Me</h2></div>
+            <p><strong>Email:</strong> cassondra.kluse@gmail.com</p>
+            <a href="https://www.linkedin.com/in/cassondra-kluse/" target="_blank"><img id="linkedin-photo" src="./Images/linkedinlogo.png"></a>
+            <a href="https://github.com/ckluse" target="_blank"><img id="git-photo" src="./Images/githublogo.png"></a>
+        </div>
         </footer>
 </html>
