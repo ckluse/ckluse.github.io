@@ -1,11 +1,11 @@
-/*Site Wide Styles*/
+/*Universal Styles*/
 
 :root {
     --portfoliocolor1: #189ab4;
     --portfoliocolor2: #75e6da;
     --background: #000000;
     --textcolor: #ffffff;
-    --resumewidth: 1000px;
+    overflow-x: hidden;
 }
 
 * {
@@ -14,22 +14,27 @@
     font-family:Verdana, sans-serif;
   }
 
-main {
-    background-color: var(--background);
-    color: var(--textcolor);
-    margin-top: 100px;
+body {
+    height: 98vh;
+    
 }
 
-/*Screen Size Adjustments*/
-@media only screen and (max-width: 300px) {
-    body {
-      background-color: lightblue;
-    }
-    #navbar {
-        text-wrap: wrap;
-    }
-  }
-  
+h1 {
+    color: var(--portfoliocolor1);
+}
+
+h2 {
+    color: var(--portfoliocolor2);
+}
+
+a {
+    color: var(--portfoliocolor1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--portfoliocolor2);
+}
 
 /*Header*/
 
@@ -59,47 +64,56 @@ header li {
     color: var(--portfoliocolor2);
 }
 
+
 /*Home Page*/
 /*Welcome Section*/
 
 #welcome-section {
     display: flex;
     align-items: center;
-    height: 60vh;
-    margin: 0;
-    padding: 0;
-    width: 80vw;
-    height: 50vh;
-    margin-left: 150px;
+    height: 90%;
 }
 
 #picture {
     flex: 1;
-    max-width: 20%;
-    min-width: 5%;
-    height: 90%;
-    max-height: 80vh;
+    width: 20vw;
+    max-width: 350px;
+    height: auto;
+    max-height: 60vh;
     border-color: var(--portfoliocolor1);
     border-style: double;
     border-width: 5px;
     border-radius: 50%;
     box-sizing: border-box;
-    margin-left: 200px;
+    margin-left: 10%;
 }
 
 #welcome-content {
     flex: 1;
-    padding: 20px;
-    margin-left: 300px;
+    margin-left: 10%;
+    width: 10%;    
 }
 
 #welcome-content h1 {
-    margin-left: 200px;
-    color: var(--portfoliocolor1);
+   color: var(--portfoliocolor1);
+   text-align: center;
 }
 
 #welcome-content h2 {
     color: var(--portfoliocolor2);
+    text-align: center;
+}
+
+#welcome-content p {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Contact Subsection*/
+#contact-section {
+    margin-left: 10%;
+    padding: 2px;
 }
 
 #contact-section img {
@@ -113,6 +127,11 @@ header li {
     height: 25px;
 }
 
+/*About Page*/
+
+
+
+
 /*Projects Page*/
 /*Writing Projects*/
 
@@ -125,34 +144,10 @@ header li {
 }
 
 
-/*Resume Page*/
+/*Screen Size Changes
 
-#resumepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen only and (max-width: 400px) {
+    /*Home Page
 }
 
-.organization {
-    font-style: italic;
-    font-size: 12px;
-    margin: 2px;
-}
-
-.date {
-    font-size: 12px;
-    margin: 2px;
-}
-
-.degree {
-    margin: 2px;
-}
-
-.center {
-    text-align: center;
-    width: var(--resumewidth);
-}
-
-.resumelists {
-    width: var(--resumewidth);
-}
+*/
