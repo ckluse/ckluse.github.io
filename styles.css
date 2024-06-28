@@ -1,3 +1,5 @@
+/*Site Wide Styles*/
+
 :root {
     --portfoliocolor1: #70a9de;
     --portfoliocolor2: white;
@@ -8,11 +10,20 @@
     background-color: var(--portfoliocolor1);
     color: var(--portfoliocolor2);
     width: 100%;
-    margin-left: 10px;
     border: 3px solid black;
     text-align: center;
     text-shadow: 2px 2px 4px black;
 }
+
+/*Screen Size Adjustments*/
+@media only screen and (max-width: 300px) {
+    body {
+      background-color: lightblue;
+    }
+    #navbar {
+        text-wrap: wrap;
+    }
+  }
 
 /*Header*/
 
@@ -48,7 +59,7 @@ header li {
     color: white;
 }
 
-
+/*Home Page*/
 /*About Me Section*/
 
 #welcome-section {
@@ -120,12 +131,13 @@ header li {
     height: 25px;
 }
 
-/*Screen Size Adjustments*/
-@media only screen and (max-width: 300px) {
-  body {
-    background-color: lightblue;
-  }
-  #navbar {
-      text-wrap: wrap;
-  }
+/*Projects Page*/
+/*Writing Projects*/
+
+.writing-images img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
 }
