@@ -1,18 +1,23 @@
 /*Site Wide Styles*/
 
 :root {
-    --portfoliocolor1: #70a9de;
-    --portfoliocolor2: white;
-    --portfoliocolor3: black;
+    --portfoliocolor1: #189ab4;
+    --portfoliocolor2: #75e6da;
+    --background: #000000;
+    --textcolor: #ffffff;
+    --resumewidth: 1000px;
 }
 
-.bar {
-    background-color: var(--portfoliocolor1);
-    color: var(--portfoliocolor2);
-    width: 100%;
-    border: 3px solid black;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
+* {
+    color: var(--textcolor);
+    background-color: var(--background);
+    font-family:Verdana, sans-serif;
+  }
+
+main {
+    background-color: var(--background);
+    color: var(--textcolor);
+    margin-top: 100px;
 }
 
 /*Screen Size Adjustments*/
@@ -24,109 +29,86 @@
         text-wrap: wrap;
     }
   }
+  
 
 /*Header*/
 
+header {
+    padding-bottom: 45px;
+    border-bottom: 2px solid var(--portfoliocolor1);
+}
+
 #navbar {
-    background-color: var(--portfoliocolor1);
-    color: white;
-    text-align: center;
     padding: 8px;
-    border: 2px solid black;
-    top: 0;
     width: 100%;
 }
 
-#name {
-    margin:auto;
-    font-size: 2.5rem; 
-    text-align: center;
-    text-shadow: 4px 4px 4px black;
-}
-
 header li {
-    display: inline;
-    font-size: 1.5rem;
+    float: left;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
 }
 
 #navbar a {
-    color: black;
-    padding: 5px;
     text-decoration: none;
+    color: var(--portfoliocolor1);
 }
 
 #navbar a:hover {
-    color: white;
+    color: var(--portfoliocolor2);
 }
 
 /*Home Page*/
-/*About Me Section*/
+/*Welcome Section*/
 
 #welcome-section {
     display: flex;
-}
-
-#about-bar {
-    margin-top: 20px;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    height: 50vh;
+    margin-left: 150px;
 }
 
 #picture {
-    width: 20%;
-    height: 50%;
-    border-color: black;
+    flex: 1;
+    max-width: 20%;
+    min-width: 5%;
+    height: 90%;
+    max-height: 80vh;
+    border-color: var(--portfoliocolor1);
     border-style: double;
     border-width: 5px;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 120px;
+    box-sizing: border-box;
+    margin-left: 200px;
 }
 
-/*Projects Section*/
-
-.project-tile a {
-    color: black;
-    padding: 5px;
-    text-decoration: none;
+#welcome-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 300px;
 }
 
-.project-tile a:hover {
-    color: blue;
+#welcome-content h1 {
+    margin-left: 200px;
+    color: var(--portfoliocolor1);
 }
 
-#projects p {
-    margin-left: 10px;
+#welcome-content h2 {
+    color: var(--portfoliocolor2);
 }
 
-
-/*Skills Section*/
-.skills h2{
-    text-align:center;
+#contact-section img {
+    padding: 1px;
+    margin: 2px;
+    border: 1px solid var(--portfoliocolor1);
 }
 
-.skills ul{
-    text-align:center;
-}
-.skills li{
-    display: inline-block;
-    padding: 10px; 
-    font-weight:bold;
-}
-
-/*Contact Section*/
-.contact {
-  margin: auto;
-  width: 50%;
-  border: 2px solid black;
-  padding: 10px;
-  text-align: center;
-}
-
-#contact-bar {
-    margin: auto;
-}
-
-#linkedin-photo, #git-photo {
+#linkedin-photo, #git-photo, #gmail-photo {
     width: 25px;
     height: 25px;
 }
@@ -140,4 +122,37 @@ header li {
     width: 50%;
     height: 50%;
     border: 1px solid black;
+}
+
+
+/*Resume Page*/
+
+#resumepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organization {
+    font-style: italic;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.date {
+    font-size: 12px;
+    margin: 2px;
+}
+
+.degree {
+    margin: 2px;
+}
+
+.center {
+    text-align: center;
+    width: var(--resumewidth);
+}
+
+.resumelists {
+    width: var(--resumewidth);
 }
