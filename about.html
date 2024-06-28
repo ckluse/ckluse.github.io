@@ -11,17 +11,28 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Portfolio</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">Portfolio 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="writing-portfolio.html">Writing Portfolio</a>
+                          <a href="coding-portfolio.html">Coding Portfolio</a>
+                        </div></div></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>Hi there! I'm Cassondra (but call me Cassie)</h1>
-                <p>I'm a multifaceted professional with a knack for crafting compelling content and wrangling data to train AI models. My educational background includes:</p>
+        <main id="about-section">
+            <div>
+            <h1>Who is Cassondra Kluse?</h1>
+                <p>I'm a multifaceted professional who has experience with geospatial technology, generative AI, content writing, and several programming languages. I am diligent and motivated and am always looking for a new challenge or experience. I'm currently working on a freelance basis, but am eager to transition into a full-time career in tech in the next 12 months.</p>
+
+                <h2>Educational Background</h2>
+                    
+                <p>Below is a list of my degrees and certifications.</p>
 
                 <ul>
-                    <li>Bachelor's degree in Geography from Valparaiso University (graduated 2015) </li>
+                    <li>Bachelor of Science degree in Geography from Valparaiso University (graduated 2015) </li>
                     <li>Certificate in Geographic Information Systems (GIS) from Penn State (completed 2016)</li>
                     <li>Responsive Web Design Certificate from freeCodeCamp (completed June 2024)</li>  
                     <li>Front End Engineering Career Track Certification from Codecademy (in progress)</li>
@@ -29,26 +40,25 @@
 
                 <h2>Content Writing Work</h2>
 
-                <p>As a content writer, I've tackled everything from snappy blog posts to dense technical documentation for clients like Microsoft, Glassdoor, BetterHelp, and Glority LLC. Distilling complex topics into clear, engaging content is a passion of mine. If you want to see some samples of my work, you can check out my <a href="projects.html">writing portfolio</a>. </p>
+                <p>For over three years, I've operated a freelance content writing business where I create a variety of content for a diverse list of clients and industries. I've tackled everything from snappy blog posts to dense technical documentation and have worked for several high-profile clients such as Microsoft, Glassdoor, and BetterHelp. If you want to see some samples of my work, you can check out my <a href="projects.html">writing portfolio</a>. </p>
 
-                <h2>AI Training Experience</h2>
+                <h2>Prompt Engineering/AI Training Experience</h2>
             
-                My AI training work involves me collaborating with machine learning teams to whip chatbots, recommendation engines, and NLP models into shape. I annotate data, write prompts, assess performance, and provide strategic guidance to ensure AIs are accurate, reliable, and user-friendly.
+                As an AI Trainer and Prompt Engineer, I collaborate with AI developers to whip chatbots and and generative AI models into shape. I achieve this by annotating data, writing prompts, and assessing performances of the models. I strategically create prompts to test the models' abilities to follow instructions, provide factual information, and handle unsafe prompts effectively. 
 
                 <h2>Career Goals</h2>
             
-                Looking ahead, I'm excited to dive deeper into the tech world, leveraging my unique blend of communication savvy, technical aptitude, and adaptability. Whether I'm working as a Technical Writer, Prompt Engineer, or Software Developer, I'm confident I can make a real impact.</p>
+                Looking ahead, I'm excited to dive deeper into the tech industry, leveraging my unique blend of communication skills, technical aptitude, and adaptability. I'm open to continuing working as a freelance writer and AI trainer, but am eager to transition into a full-time tech career by 2025. I'm currently open to working as a Technical Writer, Prompt Engineer, or Software Developer. </p></div>
 
                 <h2>Let's Chat</h3>
-                <p>If you're looking for a dedicated team player to help drive your success, let's connect! Reach out via the contact info below and let's explore how we can collaborate.</p>
+                <p>If you're interested in collaborating or hiring me, feel free to contact me through the methods below. You can find more details of my work experience using the download link. </p>
         <div class="contact-section">
             <a href="mailto:cassondra.kluse@gmail.com" target="_blank"><img id="gmail-photo" src="./Images/gmail.png"></a>
         <a href="https://www.linkedin.com/in/cassondra-kluse/" target="_blank"><img id="linkedin-photo" src="./Images/linkedinlogo.png"></a>
         <a href="https://github.com/ckluse" target="_blank"><img id="git-photo" src="./Images/githublogo.png"></a>
-        <!--maybe a contact button as well...or linked in and github icons-->
-        <!--have a download resume button-->
-        <!--maybe delete resume page then?? can discuss experience in about page and will have a way to download resume-->
         </div>
+        <button class="resume-button" id="about-button" type="button"><a href="Images/Kluse_Resume.pdf" target="_blank" download="Kluse_Resume">Download My Resume</a>
+        </button>
         </main>
     </body>
 </html>
