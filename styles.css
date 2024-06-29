@@ -1,10 +1,10 @@
 /*Universal Styles*/
 
 :root {
-    --portfoliocolor1: #0E86D4;
-    --portfoliocolor2: #68BBE3;
-    --background: #080909;
-    --textcolor: #ffffff;
+    --portfoliocolor1: #045174;
+    --portfoliocolor2: #E87A00;
+    --background: #ffffff;
+    --textcolor: #000000;
     overflow-x: hidden;
 }
 
@@ -41,11 +41,13 @@ a:hover {
 header {
     padding-bottom: 45px;
     border-bottom: 4px solid var(--portfoliocolor1);
+    background-color: var(--portfoliocolor1);
 }
 
 #navbar {
     padding: 8px;
     width: 100%;
+    background-color: var(--portfoliocolor1);
 }
 
 header li {
@@ -54,11 +56,15 @@ header li {
     list-style-type: none;
     padding: 10px;
     font-weight: bold;
+    background-color: var(--portfoliocolor1);
+    
 }
 
 #navbar a {
     text-decoration: none;
-    color: var(--portfoliocolor1);
+    color: var(--background);
+    background-color: var(--portfoliocolor1);
+    
 }
 
 #navbar a:hover, .dropdown:hover .dropbtn {
@@ -73,7 +79,8 @@ header li {
   }
   
   .dropdown .dropbtn {
-    color: var(--portfoliocolor1);
+    color: var(--background);
+    background-color: var(--portfoliocolor1);
     font-size: 20px;
     font-weight: bold;
     border: none;
@@ -116,8 +123,8 @@ header li {
     max-width: 350px;
     height: auto;
     max-height: 60vh;
-    border: 4px solid var(--portfoliocolor1);
-    border-radius: 50%;
+    border: 4px solid var(--textcolor);
+    border-radius: 10%;
     box-sizing: border-box;
     margin-left: 10%;
 }
@@ -155,6 +162,8 @@ header li {
     height: 30px;
     padding: 1px;
     margin: 2px;
+    border-radius: 10%;
+    border: 1px solid var(--portfoliocolor1);
 }
 
 .resume-button {
@@ -162,13 +171,13 @@ header li {
     margin-left: 10%;
     margin-top: 5px;
     padding: 5px;
-    border: 1px solid var(--background);
+    border: 1px solid var(--textcolor);
     font-weight: bold;
 }
 
 .resume-button a {
     background-color: var(--portfoliocolor1);
-    color: var(--textcolor);
+    color: var(--background);
 }
 
 /*About Page*/
@@ -189,15 +198,80 @@ header li {
 
 /*Projects Page*/
 /*Writing Projects*/
-
-.writing-images img{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
+#coding-main, #writing-main {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
+.flexcontainer {
+    display: flex;
+}
+
+.book {
+    width: 50%;
+}
+
+.book h3, .book p {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.book p {
+    text-align: left;
+}
+
+.book-images {
+    width: auto;
+    height: 300px;
+    border: 1px solid var(--textcolor);
+}
+
+#bplans, .articlediv {
+    justify-content: space-between;
+}
+
+#bplans img, .articleimgs{
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid var(--textcolor);
+}
+
+.toptext {
+    width: 60%;
+    margin-left: 18%;
+}
+
+.other{
+    list-style-type: none;
+}
+/*Coding Projects*/
+
+#coding-main p {
+    width: 60%;
+    margin-left: 15vw;
+}
+
+.details {
+    text-align: left;
+}
+
+#surveyimg {
+    border: 2px solid var(--portfoliocolor1);
+    width: auto;
+    height: 300px;
+    border-radius: 10%;
+}
+
+#gitdocimg {
+    border: 2px solid var(--portfoliocolor1);
+    width: auto;
+    height: 300px;
+    border-radius: 5%;
+}
 
 /*Screen Size Changes
 
