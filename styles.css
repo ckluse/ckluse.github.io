@@ -42,12 +42,14 @@ header {
     padding-bottom: 45px;
     border-bottom: 4px solid var(--portfoliocolor1);
     background-color: var(--portfoliocolor1);
+    margin-bottom: 5%;
 }
 
 #navbar {
     padding: 8px;
     width: 100%;
     background-color: var(--portfoliocolor1);
+    position: absolute;
 }
 
 header li {
@@ -64,6 +66,7 @@ header li {
     text-decoration: none;
     color: var(--background);
     background-color: var(--portfoliocolor1);
+    text-shadow: 2px 2px 4px var(--textcolor);
     
 }
 
@@ -81,6 +84,7 @@ header li {
   .dropdown .dropbtn {
     color: var(--background);
     background-color: var(--portfoliocolor1);
+    text-shadow: 2px 2px 4px var(--textcolor);
     font-size: 20px;
     font-weight: bold;
     border: none;
@@ -132,7 +136,8 @@ header li {
 #welcome-content {
     flex: 1;
     margin-left: 10%;
-    width: 10%;    
+    width: 10%;   
+    margin-top: 100px;
 }
 
 #welcome-content h1 {
@@ -143,12 +148,24 @@ header li {
 #welcome-content h2 {
     color: var(--portfoliocolor2);
     text-align: center;
+    text-shadow: 2px 2px 2px var(--textcolor);
 }
 
 #welcome-content p {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills li{
+    display: inline;
+    list-style-type: none;
+    font-weight: bold;
+    color: var(--portfoliocolor2);
 }
 
 /*Contact Subsection*/
@@ -273,10 +290,93 @@ header li {
     border-radius: 5%;
 }
 
-/*Screen Size Changes
+/*Screen Size Changes*/
 
-@media screen only and (max-width: 400px) {
-    /*Home Page
+@media only screen and (max-width: 1280px) {
+    /*Universal Styles*/
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #picture {
+        width: 15vw;
+        max-width: 300px;
+        height: auto;
+        max-height: 50vh;
+    }
 }
 
-*/
+@media only screen and (max-width: 1024px) {
+    /*Universal Styles*/
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /*Universal Styles*/
+
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /*Universal Styles*/
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
