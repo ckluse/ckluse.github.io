@@ -458,6 +458,9 @@ header li {
 
 @media only screen and (max-width: 640px) {
     /*Universal Styles*/
+* {
+    background-color: purple;
+} 
 
     h1 {
         font-size: 20px;
@@ -475,12 +478,16 @@ header li {
         font-size: 10px;
     }
 
-    /*header and navigation bar*/
+/*header and navigation bar*/
 
 header li {
     font-size: 16px;
     padding: 5px;
 }
+
+.dropdown .dropbtn {
+    font-size: 16px;
+  }
 
 /*Welcome Section*/
 
@@ -491,21 +498,19 @@ header li {
     text-align: center;
 }
 
+#picture {
+    width: 10vw;
+    max-width: 200px;
+    height: auto;
+    max-height: 40vh;
+    margin-left: 10%;
+}
+
+
 #welcome-content p {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.skills {
-    text-align: center;
-}
-
-.skills li{
-    display: inline;
-    list-style-type: none;
-    font-weight: bold;
-    color: var(--portfoliocolor2);
 }
 
 
