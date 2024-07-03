@@ -31,6 +31,7 @@ h2 {
 a {
     color: var(--portfoliocolor1);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -139,14 +140,12 @@ header li {
 }
 
 #welcome-content h1 {
-   color: var(--portfoliocolor1);
    text-align: center;
 }
 
 #welcome-content h2 {
     color: var(--portfoliocolor2);
     text-align: center;
-    text-shadow: 2px 2px 2px var(--textcolor);
 }
 
 #welcome-content p {
@@ -163,12 +162,12 @@ header li {
     display: inline;
     list-style-type: none;
     font-weight: bold;
-    color: var(--portfoliocolor2);
+    color: var(--textcolor);
 }
 
 /*Contact Subsection*/
 #contact-section {
-    margin-left: 10%;
+    margin-left: 40%;
     padding: 2px;
 }
 
@@ -183,7 +182,7 @@ header li {
 
 .resume-button {
     background-color: var(--portfoliocolor1);
-    margin-left: 10%;
+    margin-left: 38%;
     margin-top: 5px;
     padding: 5px;
     border: 1px solid var(--textcolor);
@@ -201,6 +200,7 @@ header li {
     width: 80%;
     margin-left: 10%;
     padding-bottom: 10px;
+    margin-top: 100px;
 }
 
 #about-section h1 {
@@ -211,13 +211,13 @@ header li {
     margin-left: 0;
 }
 
-/*Projects Page*/
+/*Portfolio Pages*/
 /*Writing Projects*/
 #coding-main, #writing-main {
     width: 80%;
     margin-left: 10%;
-    padding-bottom: 10px;
     text-align: center;
+    margin-top: 100px;
 }
 
 .flexcontainer {
@@ -229,7 +229,7 @@ header li {
 }
 
 .book h3, .book p {
-    width: 70%;
+    width: 80%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -241,23 +241,35 @@ header li {
 .book-images {
     width: auto;
     height: 300px;
-    border: 1px solid var(--textcolor);
+    border: 2px solid var(--textcolor);
 }
 
-#bplans, .articlediv {
-    justify-content: space-between;
+#bplans {
+    justify-content: space-evenly;
 }
 
-#bplans img, .articleimgs{
+.articlediv h3 {
+    width: 80%;
+}
+
+.articleimgs{
+    width: auto;
+    height: 290px;
+    border: 2px solid var(--textcolor);
+}
+
+#bplans img{
     width: auto;
     height: 300px;
-    margin: 10px;
-    border: 1px solid var(--textcolor);
+    margin: 5px;
+    border: 2px solid var(--textcolor);
 }
 
 .toptext {
-    width: 60%;
-    margin-left: 18%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
 }
 
 .other{
@@ -275,243 +287,24 @@ header li {
 }
 
 #surveyimg {
-    border: 2px solid var(--portfoliocolor1);
+    border: 2px solid var(--textcolor);
     width: auto;
     height: 300px;
     border-radius: 10%;
 }
 
 #gitdocimg {
-    border: 2px solid var(--portfoliocolor1);
+    border: 2px solid var(--textcolor);
     width: auto;
     height: 300px;
     border-radius: 5%;
 }
 
-/*Screen Size Changes*/
+/*Screen Size Adjustment*/
 
-@media only screen and (max-width: 1280px) {
-    /*Universal Styles*/
-
-    h1 {
-        font-size: 30px;
+@media screen and (max-width: 1080px) {
+    .flexcontainer {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    #picture {
-        width: 15vw;
-        max-width: 300px;
-        height: auto;
-        max-height: 50vh;
-    }
-
-    /*header {
-    padding-bottom: 45px;
-    border-bottom: 4px solid var(--portfoliocolor1);
-    background-color: var(--portfoliocolor1);
-    margin-bottom: 5%;
-}
-
-#navbar {
-    padding: 8px;
-    width: 100%;
-    background-color: var(--portfoliocolor1);
-    position: absolute;
-}
-
-header li {
-    float: left;
-    font-size: 20px;
-    list-style-type: none;
-    padding: 10px;
-    font-weight: bold;
-    background-color: var(--portfoliocolor1);
-    
-}
-
-#navbar a {
-    text-decoration: none;
-    color: var(--background);
-    background-color: var(--portfoliocolor1);
-    text-shadow: 2px 2px 4px var(--textcolor);
-    
-}
-*/
-}
-
-@media only screen and (max-width: 1024px) {
-    /*Universal Styles*/
-
-
-    h1 {
-        font-size: 26px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-     /*header {
-    padding-bottom: 45px;
-    border-bottom: 4px solid var(--portfoliocolor1);
-    background-color: var(--portfoliocolor1);
-    margin-bottom: 5%;
-}
-
-#navbar {
-    padding: 8px;
-    width: 100%;
-    background-color: var(--portfoliocolor1);
-    position: absolute;
-}
-
-header li {
-    float: left;
-    font-size: 20px;
-    list-style-type: none;
-    padding: 10px;
-    font-weight: bold;
-    background-color: var(--portfoliocolor1);
-    
-}
-
-#navbar a {
-    text-decoration: none;
-    color: var(--background);
-    background-color: var(--portfoliocolor1);
-    text-shadow: 2px 2px 4px var(--textcolor);
-    
-}
-*/
-}
-
-@media only screen and (max-width: 768px) {
-    /*Universal Styles*/
-
-
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-     /*header {
-    padding-bottom: 45px;
-    border-bottom: 4px solid var(--portfoliocolor1);
-    background-color: var(--portfoliocolor1);
-    margin-bottom: 5%;
-}
-
-#navbar {
-    padding: 8px;
-    width: 100%;
-    background-color: var(--portfoliocolor1);
-    position: absolute;
-}
-
-header li {
-    float: left;
-    font-size: 20px;
-    list-style-type: none;
-    padding: 10px;
-    font-weight: bold;
-    background-color: var(--portfoliocolor1);
-    
-}
-
-#navbar a {
-    text-decoration: none;
-    color: var(--background);
-    background-color: var(--portfoliocolor1);
-    text-shadow: 2px 2px 4px var(--textcolor);
-    
-}
-*/
-}
-
-@media only screen and (max-width: 640px) {
-    /*Universal Styles*/
-* {
-    background-color: purple;
-} 
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    h3 {
-        font-size: 12px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-
-/*header and navigation bar*/
-
-header li {
-    font-size: 16px;
-    padding: 5px;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-  }
-
-/*Welcome Section*/
-
-#welcome-content {
-    margin-left: 8%;
-    width: 10%;   
-    margin-top: 100px;
-    text-align: center;
-}
-
-#picture {
-    width: 10vw;
-    max-width: 200px;
-    height: auto;
-    max-height: 40vh;
-    margin-left: 10%;
-}
-
-
-#welcome-content p {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
 }
